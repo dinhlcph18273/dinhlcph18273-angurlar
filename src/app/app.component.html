@@ -1,9 +1,9 @@
 <header>
-  <h1>header</h1>
-  <a routerLink="hello">Hello</a> <br>
   <a routerLink="about">About</a>
 
 </header>
-<app-hello [data]="name"></app-hello>
-<app-products></app-products>
+<app-products [products]="productList"></app-products>
+<h2>Products Add Component</h2>
+<hr>
+<app-add-product (createProduct)="onHandleAdd($event)"></app-add-product>
 <router-outlet></router-outlet>

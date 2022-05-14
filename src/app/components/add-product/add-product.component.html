@@ -1,0 +1,6 @@
+{{product | json}}
+<form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+    <input type="text" placeholder="name" [(ngModel)]="product.name" name="name">
+    <input type="number" placeholder="price" [(ngModel)]="product.price" name="price">
+    <button>submit</button>
+</form>
