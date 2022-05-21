@@ -2,8 +2,8 @@
   <a routerLink="about">About</a>
 
 </header>
-<app-products [products]="productList"></app-products>
+<app-products></app-products>
 <h2>Products Add Component</h2>
 <hr>
-<app-add-product (createProduct)="onHandleAdd($event)"></app-add-product>
+<app-add-product></app-add-product>
 <router-outlet></router-outlet>

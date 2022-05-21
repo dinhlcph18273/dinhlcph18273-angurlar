@@ -17,12 +17,7 @@
             <td>
                 <a href="" class="btn btn-primary">Edit</a>
                 <button class="btn btn-danger" (click)="onHandleRemove(product.id)">Delete</button>
-                <button class="btn btn-info" (click)="onHandleGetProduct(product)">Detail</button>
             </td>
         </tr>
     </tbody>
 </table>
-
-<div class="detail" *ngIf="productDetail">
-    <app-product-detail [product]="productDetail"></app-product-detail>
-</div>
