@@ -17,6 +17,12 @@
       "name": "product C",
       "price": 300,
       "status": true
+    },
+    {
+      "name": "product S edit",
+      "price": 2000,
+      "status": true,
+      "id": 4
     }
   ]
 }

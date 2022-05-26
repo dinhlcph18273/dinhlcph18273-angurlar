@@ -7,25 +7,25 @@ import { IProducts } from '../models/product';
   providedIn: 'root'
 })
 export class ProductService {
-
+  API_URL = `http://localhost:3001/products/`
   constructor(
     private hhtp :HttpClient
   ) { }
 
   getListProduct(): Observable<IProducts[]>{
-    return this.hhtp.get<IProducts[]>("http://localhost:3001/products")
+    return this.hhtp.get<IProducts[]>(`${this.API_URL}`)
   }
   getProduct(id:any): Observable<IProducts>{
-    return this.hhtp.get<IProducts>(`http://localhost:3001/products/${id}`)
+    return this.hhtp.get<IProducts>(`${this.API_URL}/${id}`)
   }
   createProduct(product:IProducts):Observable<IProducts>{
-    return this.hhtp.post<IProducts>("http://localhost:3001/products", product)
+    return this.hhtp.post<IProducts>(`${this.API_URL}`, product)
   
   }
-  removeProduct(id:any){
-    return this.hhtp.delete(`http://localhost:3001/products/${id}`)
+  removeProduct(id:any):Observable<IProducts>{
+    return this.hhtp.delete<IProducts>(`${this.API_URL}/${id}`)
   }
-  editProduct(){
-
+  editProduct(product:IProducts): Observable<IProducts>{
+    return this.hhtp.put<IProducts>(`${this.API_URL}/${product.id}`, product)
   }
 }

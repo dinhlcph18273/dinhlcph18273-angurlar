@@ -24,13 +24,13 @@ export class ProductsComponent implements OnInit {
     })
   }
 
-  onHandleRemove(id: any) {
+  onHandleRemove(id: number) {
     const confirm = window.confirm("bạn có chắc muốn xóa")
     if(confirm){
-       this.productServices.removeProduct(id).subscribe(data=> {
-      this.products = this.products.filter(item => item.id !== id)
+       this.productServices.removeProduct(id).subscribe(()=> {
+        this.products = this.products.filter(item => item.id !== id)
     })
     }
-  }
+  } 
 
 }

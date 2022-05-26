@@ -15,8 +15,8 @@
             <td>{{product.price}}</td>
             <td>{{product.status? "còn hàng": "hết hàng"}}</td>
             <td>
-                <a href="" class="btn btn-primary">Edit</a>
-                <button class="btn btn-danger" (click)="onHandleRemove(product.id)">Delete</button>
+                <a routerLink="product/edit/" class="btn btn-primary">Edit</a>
+                <button class="btn btn-danger ms-1" (click)="onHandleRemove(product.id!)">Delete</button>
             </td>
         </tr>
     </tbody>
