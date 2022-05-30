@@ -1,0 +1,11 @@
+<div *ngFor="let product of products" class="card-new">
+    <nz-card nzHoverable style=" width:240px" [nzCover]="coverTemplate">
+        <nz-card-meta nzTitle="{{product.name}}"></nz-card-meta>
+        <h4 style="margin-top: 10px;">{{product.price}}</h4>
+        <button nz-button class="add"><a href="">Add To Card</a></button>
+    </nz-card>
+    <ng-template #coverTemplate>
+        <img alt="example" src="{{product.img}}" />
+    </ng-template>
+
+</div>

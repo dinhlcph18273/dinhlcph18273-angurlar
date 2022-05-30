@@ -9,9 +9,9 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent implements OnInit {
-  // @Output() createProduct = new EventEmitter<{ name: string, price: number }>();
   product: IProducts = {
     name: "",
+    img: "",
     price: 0,
     status: true
   }

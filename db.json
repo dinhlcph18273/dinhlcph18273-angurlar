@@ -3,26 +3,50 @@
     {
       "id": 1,
       "name": "product A",
+      "img":"https://picsum.photos/200/200",
       "price": 100,
       "status": true
     },
     {
       "id": 2,
       "name": "product B",
+      "img":"https://picsum.photos/200/200",
       "price": 200,
       "status": true
     },
     {
       "id": 3,
       "name": "product C",
+      "img":"https://picsum.photos/200/200",
       "price": 300,
       "status": true
     },
     {
       "name": "product S edit",
+      "img":"https://picsum.photos/200/200",
       "price": 2000,
       "status": true,
       "id": 4
     }
+  ],
+  "posts":[
+      {
+        "id":1,
+        "name":"Chiếc đồng hồ của những CEO quyền lực nhất thế giới",
+        "img": "http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/new-4.jpg",
+        "desc": "Đối với một số doanh nhân, một chiếc đồng hồ đeo tay không chỉ là ..."
+      },
+      {
+        "id":2,
+        "name":"12 chiếc đồng hồ dành cho nữ giới đắt giá nhất mọi thời đại",
+        "img": "http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/trend-2.jpg",
+        "desc": "Công nghiệp sản xuất đồng hồ sang trọng có dấu hiệu chững lại trong hai ..."
+      },
+      {
+        "id":3,
+        "name":"10 thương hiệu đồng hồ cao cấp hàng đầu mọi quý ông đều quan tâm, Rolex",
+        "img": "http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/new-3.jpg",
+        "desc": "1. Audemars Piguet Được thành lập vào năm 1875 bởi Jules-Louis Audemars và Edward-Auguste Piguet, ..."
+      }
   ]
 }

@@ -1,0 +1,14 @@
+.card-new{
+    text-align: center;
+}
+.add{
+    border: none;
+    padding: 5px 20px;
+    background: #c89979;
+}
+.add:hover{
+    background: #a27050;
+}
+.add a{
+    color: white;
+}

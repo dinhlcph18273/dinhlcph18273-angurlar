@@ -2,5 +2,6 @@
 <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
     <input type="text" placeholder="name" [(ngModel)]="product.name" name="name">
     <input type="number" placeholder="price" [(ngModel)]="product.price" name="price">
+    <input type="text" placeholder="img" [(ngModel)]="product.img" name="img">
     <button>submit</button>
 </form>

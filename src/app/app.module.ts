@@ -24,6 +24,15 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { BannerComponent } from './components/custom/banner/banner.component';
 import { AdminlayoutComponent } from './pages/adminlayout/adminlayout.component';
 import { CategoryComponent } from './components/custom/category/category.component';
+import { CardComponent } from './components/card/card.component';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzResultModule } from 'ng-zorro-antd/result';
+import { PostComponent } from './components/post/post.component';
+import { PostAddUpdateComponent } from './components/post-add-update/post-add-update.component';
+import { ListPostComponent } from './components/list-post/list-post.component';
+import { FooterComponent } from './components/custom/footer/footer.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzFormModule } from 'ng-zorro-antd/form';
 registerLocaleData(en);
 
 
@@ -40,7 +49,12 @@ registerLocaleData(en);
     BannerComponent,
     AdminlayoutComponent,
     ProductsComponent,
-    CategoryComponent
+    CategoryComponent,
+    CardComponent,
+    PostComponent,
+    PostAddUpdateComponent,
+    ListPostComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +67,10 @@ registerLocaleData(en);
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
+    NzCardModule,
+    NzResultModule,
+    NzTableModule,
+    NzFormModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
