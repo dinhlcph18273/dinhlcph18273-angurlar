@@ -8,7 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
   templateUrl: './add-product.component.html',
   styleUrls: ['./add-product.component.css']
 })
-export class AddProductComponent implements OnInit {
+export class AddProductComponent implements OnInit {  
   product: IProducts = {
     name: "",
     img: "",
@@ -33,13 +33,13 @@ export class AddProductComponent implements OnInit {
     const id = this.activedRoute.snapshot.paramMap.get("id")
     if(id){
       this.productServices.editProduct(this.product).subscribe(data => {
-        this.router.navigateByUrl("/product")
+        this.router.navigateByUrl("admin/products")
       })
     }
     else{
       this.productServices.createProduct(this.product).subscribe(data => {
       console.log(data);
-      this.router.navigateByUrl("/product")
+      this.router.navigateByUrl("admin/products")
     })
     }
    

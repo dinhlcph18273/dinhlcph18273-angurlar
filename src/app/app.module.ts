@@ -33,6 +33,7 @@ import { ListPostComponent } from './components/list-post/list-post.component';
 import { FooterComponent } from './components/custom/footer/footer.component';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 registerLocaleData(en);
 
 
@@ -70,7 +71,8 @@ registerLocaleData(en);
     NzCardModule,
     NzResultModule,
     NzTableModule,
-    NzFormModule
+    NzFormModule,
+    NzButtonModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
