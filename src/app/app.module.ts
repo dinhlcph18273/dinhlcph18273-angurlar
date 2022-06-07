@@ -34,8 +34,12 @@ import { FooterComponent } from './components/custom/footer/footer.component';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-registerLocaleData(en);
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SigninComponent } from './components/auth/signin/signin.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { NzNotificationModule } from 'ng-zorro-antd/notification';
 
+registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -55,7 +59,10 @@ registerLocaleData(en);
     PostComponent,
     PostAddUpdateComponent,
     ListPostComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +79,8 @@ registerLocaleData(en);
     NzResultModule,
     NzTableModule,
     NzFormModule,
-    NzButtonModule
+    NzButtonModule,
+    NzNotificationModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

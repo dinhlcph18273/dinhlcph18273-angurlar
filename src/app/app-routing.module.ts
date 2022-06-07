@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { SigninComponent } from './components/auth/signin/signin.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ListPostComponent } from './components/list-post/list-post.component';
 import { PostAddUpdateComponent } from './components/post-add-update/post-add-update.component';
 import {ProductDetailComponent} from './components/product-detail/product-detail.component'
@@ -11,10 +14,19 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: "" , component: HomepageComponent ,pathMatch: "full"},
-  { path: "admin",
+  { 
+    path: "" ,
+    component: HomepageComponent 
+   ,pathMatch: "full"
+  },
+  { 
+    path: "admin",
    component: AdminlayoutComponent,
    children: [
+    {
+      path: "",
+      component: DashboardComponent 
+    },
     { 
       path: "products",
       component: ProductsComponent
@@ -41,9 +53,33 @@ const routes: Routes = [
     }
   ]
 },
-{ path: "products/:id", component: ProductDetailComponent},
-{ path: "about", component: AboutComponent },
-{ path:"**", component: NotFoundComponent},
+{ 
+  path: "products/:id"
+, component: ProductDetailComponent
+},
+{
+   path: "about",
+ component: AboutComponent 
+},
+{
+  path: "signin",
+  component: SigninComponent
+},
+{
+  path: "signup",
+  component: SignupComponent
+},
+{ 
+  path:"**",
+  component: NotFoundComponent
+},
+{
+  path: "portpolio",
+  loadChildren: () => 
+  import("./customer/customer.module").then(
+    (m) => m.CustomerModule
+  )
+}
 ];
 
 @NgModule({
