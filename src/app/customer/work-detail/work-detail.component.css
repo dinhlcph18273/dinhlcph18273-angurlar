@@ -1,0 +1,51 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.work-top img{
+    margin-top: 10px;
+}
+.title{
+    margin: 0;
+}
+.feat-work-year {
+    padding: 20px 0;
+}
+
+.feat-work-year .year {
+    color: white;
+    background-color: #FF7C7C;
+    padding: 1px 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feat-work-year .dashboard {
+    font-size: 20px;
+    color: #21243D;
+    padding-left: 30px;
+}
+.desc{
+    font-size: 16px;
+    font-weight: 500;
+}
+.work-bottom{
+    margin-top: 50px;
+}
+.work-bottom h1{
+    margin: 0;
+}
+.work-bottom h2 {
+    margin: 0;
+}
+
+.desc2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+.img{
+    padding: 15px 0;
+}

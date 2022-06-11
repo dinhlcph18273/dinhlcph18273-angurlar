@@ -12,6 +12,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { AdminlayoutComponent } from './pages/adminlayout/adminlayout.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
   { 
@@ -22,6 +23,7 @@ const routes: Routes = [
   { 
     path: "admin",
    component: AdminlayoutComponent,
+   canActivate:[AuthGuard],
    children: [
     {
       path: "",
@@ -69,17 +71,18 @@ const routes: Routes = [
   path: "signup",
   component: SignupComponent
 },
-{ 
-  path:"**",
-  component: NotFoundComponent
-},
 {
-  path: "portpolio",
+  path: "portfolio",
   loadChildren: () => 
   import("./customer/customer.module").then(
     (m) => m.CustomerModule
   )
-}
+},
+{ 
+  path:"**",
+  component: NotFoundComponent
+},
+
 ];
 
 @NgModule({

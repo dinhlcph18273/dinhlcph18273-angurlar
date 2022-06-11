@@ -1,0 +1,41 @@
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+}
+.menu{
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+   padding: 16px;
+   font-size: 19px;
+   font-weight: 700;
+   color: black;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+.menu-none{
+    display: none;
+}
+
+@media  (max-width: 376px) {
+    .container{
+        margin-top:0;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-none{
+        display: flex;
+        border: none;
+        background-color: #fff;
+        font-size: 30px;
+    }
+}

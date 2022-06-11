@@ -1,0 +1,42 @@
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 65px;
+}
+.blog{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 31px;
+}
+.post{
+    width: 681px;
+    padding: 20px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.post h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.day {
+    padding-right: 30px;
+    border-right: 1px solid black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.category {
+    padding-left: 30px;
+    font-size: 20px;
+    color: #8695A4;
+}
+
+.post p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.day-cate {
+    padding: 15px 0;
+}
