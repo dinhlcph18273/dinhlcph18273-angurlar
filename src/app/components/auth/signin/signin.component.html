@@ -1,12 +1,12 @@
 <app-header></app-header>
 <div class="form">
     <h1 style="text-align: center;">Login</h1>
-    <form nz-form class="login-form" (ngSubmit)="onSubmit()">
+    <form nz-form #formAuth="ngForm" class="login-form" (ngSubmit)="onSubmit(formAuth)">
         <nz-form-item>
             <nz-form-control nzErrorTip="Please input your Email!">
                 <label for="">Email</label>
                 <nz-input-group nzPrefixIcon="user">
-                    <input type="email" nz-input [(ngModel)]="auth.email" name="email" placeholder="Email" />
+                    <input type="email" nz-input nzSize="large" name="email" placeholder="Email" ngModel />
                 </nz-input-group>
             </nz-form-control>
         </nz-form-item>
@@ -14,8 +14,7 @@
             <nz-form-control nzErrorTip="Please input your Password!">
                 <label for="">Password</label>
                 <nz-input-group nzPrefixIcon="lock">
-                    <input type="password" nz-input [(ngModel)]="auth.password" name="password"
-                        placeholder="Password" />
+                    <input type="password" nz-input nzSize="large" name="password" placeholder="Password" ngModel />
                 </nz-input-group>
             </nz-form-control>
         </nz-form-item>

@@ -9,7 +9,14 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
+      if(localStorage.getItem("user")){
+      const check = JSON.parse(localStorage.getItem("user") as string).user.role     
+        if(check == 1){
+          return true
+        }
+      }
+      window.alert("không phải admin lượn!")
+      window.location.href = "/signin"
+    return false;
   }
-  
 }

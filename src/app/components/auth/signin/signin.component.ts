@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
-import { IAuth } from 'src/app/models/auth';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -10,12 +10,6 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-auth: IAuth = {
-    username: "",
-    email: "",
-    password: "",
-    role: 0
-  }
   constructor(
     private authServices: AuthService,
     private router: Router,
@@ -25,9 +19,8 @@ auth: IAuth = {
   ngOnInit(): void {
   }
 
-  onSubmit(){
-    this.authServices.signin(this.auth).subscribe(data => {
-     
+  onSubmit(formAuth: NgForm){
+    this.authServices.signin(formAuth.value).subscribe(data => {
       localStorage.setItem("user",JSON.stringify(data))
       this.notification.create(
         "success",
