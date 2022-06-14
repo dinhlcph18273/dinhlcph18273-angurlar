@@ -70,7 +70,6 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    HttpClientModule,
     NzPageHeaderModule,
     IconsProviderModule,
     NzLayoutModule,
