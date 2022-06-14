@@ -1,23 +1,23 @@
 <form #addProduct="ngForm" nz-form class="login-form" (ngSubmit)="onSubmit()">
     <nz-form-item>
-        <nz-form-control nzErrorTip="Please input your name!">
+        <nz-form-control>
             <label for="name">Name</label><br>
             <nz-input-group nzPrefixIcon="user">
                 <input type="text" nz-input [(ngModel)]="product.name" name="name" #name="ngModel" placeholder="Name"
-                    required minlength="2" />
+                    required minlength="5" />
             </nz-input-group>
             <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
                 <div *ngIf="name.errors?.['required']">
                     Name is required.
                 </div>
                 <div *ngIf="name.errors?.['minlength']">
-
+                    Minlength 5
                 </div>
             </div>
         </nz-form-control>
     </nz-form-item>
     <nz-form-item>
-        <nz-form-control nzErrorTip="Please input your price!">
+        <nz-form-control>
             <label for="name">Price</label><br>
             <nz-input-group nzPrefixIcon="lock">
                 <input type="text" nz-input [(ngModel)]="product.price" name="price" #price="ngModel"
