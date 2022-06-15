@@ -20,7 +20,6 @@ export class ProductDetailComponent implements OnInit {
     })
    }
 
-  // @Input() product!: IProducts
   ngOnInit(): void {
   }
 

@@ -1,42 +1,18 @@
-.container{
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 65px;
+.custom-container {
+    @apply max-w-4xl mx-auto px-5
 }
-.blog{
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 31px;
-}
-.post{
-    width: 681px;
-    padding: 20px 0;
-    border-bottom: 1px solid #E0E0E0;
+.recent-post__item {
+    @apply bg-white py-5 border-b
 }
 
-.post h2 {
-    font-weight: bold;
-    font-size: 26px;
+.recent-post__title {
+    @apply text-[26px] font-bold
 }
 
-.day {
-    padding-right: 30px;
-    border-right: 1px solid black;
-    font-size: 20px;
-    font-weight: 500;
+.recent-post__meta {
+    @apply flex items-center py-5 space-x-4
 }
 
-.category {
-    padding-left: 30px;
-    font-size: 20px;
-    color: #8695A4;
-}
-
-.post p {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.day-cate {
-    padding: 15px 0;
+.recent-post__desc {
+    @apply text-[16px] font-[500]
 }

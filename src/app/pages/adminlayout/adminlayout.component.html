@@ -2,22 +2,23 @@
     <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
         <div class="logo"></div>
         <ul nz-menu nzTheme="dark" nzMode="inline">
-            <li nz-submenu nzTitle="User" nzIcon="user">
+            <li nz-submenu nzTitle="Products" nzIcon="loading">
                 <ul>
-                    <li nz-menu-item>Tom</li>
-                    <li nz-menu-item>Bill</li>
-                    <li nz-menu-item>Alex</li>
+                    <li nz-menu-item><a routerLink="/admin/products">List</a></li>
+                    <li nz-menu-item><a routerLink="/admin/products/add"></a>Add</li>
                 </ul>
             </li>
-            <li nz-submenu nzTitle="Team" nzIcon="team">
+            <li nz-submenu nzTitle="Post" nzIcon="loading">
                 <ul>
-                    <li nz-menu-item>Team 1</li>
-                    <li nz-menu-item>Team 2</li>
+                    <li nz-menu-item><a routerLink="/admin/post"></a>List</li>
+                    <li nz-menu-item><a routerLink="/admin/post/add"></a>Add</li>
                 </ul>
             </li>
-            <li nz-menu-item>
-                <i nz-icon nzType="file"></i>
-                <span>File</span>
+            <li nz-submenu nzTitle="Project" nzIcon="project">
+                <ul>
+                    <li nz-menu-item><a routerLink="/admin/project"></a>List</li>
+                    <li nz-menu-item><a routerLink="/admin/project/add"></a>Add</li>
+                </ul>
             </li>
         </ul>
     </nz-sider>

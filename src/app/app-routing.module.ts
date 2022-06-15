@@ -9,6 +9,8 @@ import { ListPostComponent } from './components/list-post/list-post.component';
 import { PostAddUpdateComponent } from './components/post-add-update/post-add-update.component';
 import {ProductDetailComponent} from './components/product-detail/product-detail.component'
 import { ProductsComponent } from './components/products/products.component';
+import { AddProjectComponent } from './components/project/add-project/add-project.component';
+import { ListProjectComponent } from './components/project/list-project/list-project.component';
 import { AdminlayoutComponent } from './pages/adminlayout/adminlayout.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -52,6 +54,14 @@ const routes: Routes = [
     {
       path:"post/edit/:id",
       component: PostAddUpdateComponent
+    },
+    {
+      path: "project",
+      component: ListProjectComponent
+    },
+    {
+      path: "project/add",
+      component: AddProjectComponent
     }
   ]
 },

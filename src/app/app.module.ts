@@ -38,6 +38,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SigninComponent } from './components/auth/signin/signin.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { NzNotificationModule } from 'ng-zorro-antd/notification';
+import { ProjectModule } from './components/project/project.module';
 
 registerLocaleData(en);
 
@@ -63,6 +64,7 @@ registerLocaleData(en);
     DashboardComponent,
     SigninComponent,
     SignupComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -79,7 +81,9 @@ registerLocaleData(en);
     NzTableModule,
     NzFormModule,
     NzButtonModule,
-    NzNotificationModule
+    NzNotificationModule,
+    ProjectModule
+    
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

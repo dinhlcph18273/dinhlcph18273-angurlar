@@ -1,53 +1,58 @@
-<div class="container">
-    <h1 class="blog">Blog</h1>
-    <div>
-        <div class="post">
-            <h2>UI Interactions of the week</h2>
+<app-breadcrumb></app-breadcrumb>
+<section class="recent-post">
+    <div class="custom-container">
+        <div class="">
+            <h1 class="text-[30px] font-bold ">Blog</h1>
+        </div>
 
-            <div class="day-cate">
-                <span class="day">12 Feb 2019</span>
-                <span class="category">Express, Handlebars</span>
+        <div class="recent-post__item" *ngFor="let blog of blogs , let i = index">
+            <h1 class="recent-post__title"><a routerLink="/portfolio/blog/{{blog.id}}"
+                    class="text-black">{{blog.title}}</a></h1>
+            <div class="recent-post__meta">
+                <span class="text-[18] font-[500]">12 Feb 2019</span>
+                <span>|</span>
+                <a href="" class="text-[18] text-[#8695A4]">{{blog.category}}</a>
             </div>
-
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            <p class="recent-post__desc">{{blog.subTitle}}</p>
+        </div>
+        <!-- <div class="recent-post__item">
+            <h1 class="recent-post__title">UI Interactions of the week</h1>
+            <div class="recent-post__meta">
+                <span class="text-[18] font-[500]">12 Feb 2019</span>
+                <span>|</span>
+                <a href="" class="text-[18] text-[#8695A4]">Express, Handlebars</a>
+            </div>
+            <p class="recent-post__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia
+                consequat
                 duis enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <div class="post">
-            <h2>UI Interactions of the week</h2>
-
-            <div class="day-cate">
-                <span class="day">12 Feb 2019</span>
-                <span class="category">Express, Handlebars</span>
+        <div class="recent-post__item">
+            <h1 class="recent-post__title">UI Interactions of the week</h1>
+            <div class="recent-post__meta">
+                <span class="text-[18] font-[500]">12 Feb 2019</span>
+                <span>|</span>
+                <a href="" class="text-[18] text-[#8695A4]">Express, Handlebars</a>
             </div>
-
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            <p class="recent-post__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia
+                consequat
                 duis enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <div class="post">
-            <h2>UI Interactions of the week</h2>
-
-            <div class="day-cate">
-                <span class="day">12 Feb 2019</span>
-                <span class="category">Express, Handlebars</span>
+        <div class="recent-post__item">
+            <h1 class="recent-post__title">UI Interactions of the week</h1>
+            <div class="recent-post__meta">
+                <span class="text-[18] font-[500]">12 Feb 2019</span>
+                <span>|</span>
+                <a href="" class="text-[18] text-[#8695A4]">Express, Handlebars</a>
             </div>
-
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            <p class="recent-post__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia
+                consequat
                 duis enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
-        <div class="post">
-            <h2>UI Interactions of the week</h2>
-
-            <div class="day-cate">
-                <span class="day">12 Feb 2019</span>
-                <span class="category">Express, Handlebars</span>
-            </div>
-
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                duis enim velit
-                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
+        </div> -->
     </div>
-</div>
+</section>
