@@ -2,13 +2,13 @@
     <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
         <div class="logo"></div>
         <ul nz-menu nzTheme="dark" nzMode="inline">
-            <li nz-submenu nzTitle="Products" nzIcon="loading">
+            <li nz-submenu nzTitle="Products" nzIcon="inbox">
                 <ul>
                     <li nz-menu-item><a routerLink="/admin/products">List</a></li>
                     <li nz-menu-item><a routerLink="/admin/products/add"></a>Add</li>
                 </ul>
             </li>
-            <li nz-submenu nzTitle="Post" nzIcon="loading">
+            <li nz-submenu nzTitle="Post" nzIcon="form">
                 <ul>
                     <li nz-menu-item><a routerLink="/admin/post"></a>List</li>
                     <li nz-menu-item><a routerLink="/admin/post/add"></a>Add</li>
@@ -18,6 +18,12 @@
                 <ul>
                     <li nz-menu-item><a routerLink="/admin/project"></a>List</li>
                     <li nz-menu-item><a routerLink="/admin/project/add"></a>Add</li>
+                </ul>
+            </li>
+            <li nz-submenu nzTitle="Category" nzIcon="form">
+                <ul>
+                    <li nz-menu-item><a routerLink="/admin/category"></a>List</li>
+                    <li nz-menu-item><a routerLink="/admin/category/add"></a>Add</li>
                 </ul>
             </li>
         </ul>

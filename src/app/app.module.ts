@@ -39,6 +39,7 @@ import { SigninComponent } from './components/auth/signin/signin.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { NzNotificationModule } from 'ng-zorro-antd/notification';
 import { ProjectModule } from './components/project/project.module';
+import { CategoryModule } from './components/category/category.module';
 
 registerLocaleData(en);
 
@@ -82,7 +83,8 @@ registerLocaleData(en);
     NzFormModule,
     NzButtonModule,
     NzNotificationModule,
-    ProjectModule
+    ProjectModule,
+    CategoryModule
     
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],

@@ -18,6 +18,7 @@ import { BannerComponent } from './banner/banner.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectComponent } from './project/project.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
     BannerComponent,
     BlogComponent,
     ProjectComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    CategoryComponent
   ],
   imports: [
     CommonModule,

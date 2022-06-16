@@ -5,6 +5,8 @@ import { AddProjectComponent } from './add-project/add-project.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +19,10 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     CommonModule,
     NzTableModule,
     AppRoutingModule,
+    NzButtonModule,
+    NzFormModule,
+    FormsModule,
     NzButtonModule
-  ]
+    ]
 })
 export class ProjectModule { }

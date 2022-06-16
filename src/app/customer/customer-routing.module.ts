@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
+import { CategoryComponent } from './category/category.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutPortfolioComponent } from './layout-portfolio/layout-portfolio.component';
@@ -74,6 +75,16 @@ const routes: Routes = [
         ]
        }
       },
+      {
+        path: "category/:id",
+        component: CategoryComponent,
+        data: {
+          breadcrumbs: [
+            { label: 'Home', url: "/portfolio" },
+            { label: "category"}
+        ]
+       }
+      }
     ]
   }
 ];

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IBlog } from 'src/app/models/blog';
 import { BlogService } from 'src/app/services/blog.service';
+import * as dayjs from "dayjs"
 
 @Component({
   selector: 'app-blog-detail',
@@ -16,6 +17,7 @@ export class BlogDetailComponent implements OnInit {
   ) {
     const id = this.ActiveRoute.snapshot.paramMap.get("id")
     this.blogServices.getBlog(id).subscribe(data => {
+       data.createAt = dayjs(data.createAt).format("YYYY")
       this.blog = data
     })
    }

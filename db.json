@@ -124,5 +124,17 @@
       "category": "Flex -Column",
       "createAt": "Sun Jun 12 2022 04:58:08 GMT+0700 (Giờ Đông Dương)"
     }
+  ],
+  "category":[
+    {
+      "id": 1,
+      "title": "Dasboard",
+      "img": "https://s3.amazonaws.com/creativetim_bucket/products/50/original/material-dashboard.jpg?1634648873"
+    },
+    {
+      "id": 2,
+      "title": "Typography",
+      "img": "https://img.freepik.com/free-vector/editable-text-effect-modern-3d-creative-minimal-font-style_314614-1151.jpg?w=2000"
+    }
   ]
 }

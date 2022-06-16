@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { SigninComponent } from './components/auth/signin/signin.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
+import { ListCategoryComponent } from './components/category/list-category/list-category.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ListPostComponent } from './components/list-post/list-post.component';
 import { PostAddUpdateComponent } from './components/post-add-update/post-add-update.component';
@@ -33,7 +34,7 @@ const routes: Routes = [
     },
     { 
       path: "products",
-      component: ProductsComponent
+      component: ProductsComponent,
     },
     { 
       path: "products/add",
@@ -62,6 +63,10 @@ const routes: Routes = [
     {
       path: "project/add",
       component: AddProjectComponent
+    },
+    {
+      path: "category",
+      component: ListCategoryComponent
     }
   ]
 },

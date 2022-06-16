@@ -17,7 +17,8 @@
                     </a>
                     <div class="project__meta">
                         <span class="project__create">{{project.year}}</span>
-                        <a href="" class="project__category">{{project.category}}</a>
+                        <a routerLink="/portfolio/category/{{project.id}}"
+                            class="project__category">{{project.category}}</a>
                     </div>
                     <p class="project__desc">{{project.desc}}</p>
                 </div>
